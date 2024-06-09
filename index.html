@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style-type:none;
+        }
+
+        .grid-container{
+            display:grid;
+            grid-template-columns:1fr 3fr 1fr;
+            column-gap:30px;
+
+        }
+        header{
+            grid-column:span 3;
+            text-align:center;
+            border-bottom:1px solid #ddd;
+        }
+        nav{
+            padding: 30px;
+            border-right: 1px solid #ddd;
+        }
+        nav li{
+            text-decoration: underline;
+        }
+        article{
+            padding:30px;
+        }
+        article h2{
+            font-size:3.5em;
+            max-width:800px;
+        }
+        article img{
+            width:100%;
+        }
+        article p{
+            margin-top:30px;
+            line-height: 2em;
+            color:#777;
+        }
+        aside{
+            padding:30px;
+            border-left:1px solid #ddd;
+        }
+        footer{
+        grid-column:span 3;
+        text-align: center;
+        border-top:1px solid #ddd;
+        padding:30px;
+        }
+
+        @media screen and (max-width:1200px)
+        {
+            nav{
+                grid-column:span 3;
+                border-bottom:1px solid #ddd;
+                border-right:0px;
+
+            }
+
+            nav li{
+                display:inline-block;
+                margin-right:10px;
+            }
+
+            article{
+                grid-column:span 2;
+            }
+            aside{
+                padding: 16px;
+            }
+
+        }
+
+
+        @media screen and (max-width:980px)
+        {
+            nav,article,aside{
+                grid-column:span 3;
+
+            }
+            aside{
+                border-left:0;
+                border-top:1px solid #ddd;
+
+            }
+            article h2{
+                font-size:2.5em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <header>
+            <h1>The Frog Wall</h1>
+        </header>
+        <nav>
+            <p>
+                Categories
+            </p>
+            <li>Films & Cinema</li>
+            <li>Books and Reading</li>
+            <li>Games & Console</li>
+            <li>Food & Drinks</li>
+            <li>World News</li>
+            <li>Outdoor living</li>
+        </nav>
+        <article>
+            <h2>
+                The 5 best open world adventure Games.
+            </h2>
+            <img src="./Banner.jpg" alt="banner-img"/>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ad, praesentium necessitatibus in aspernatur repellat tenetur illum reprehenderit inventore debitis sapiente non provident ab pariatur nisi similique, totam labore, nam adipisci voluptate blanditiis obcaecati aliquid harum a? Fugit debitis accusantium eveniet! Est dolorum cum perferendis ratione molestiae mollitia deleniti vero.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ad, praesentium necessitatibus in aspernatur repellat tenetur illum reprehenderit inventore debitis sapiente non provident ab pariatur nisi similique, totam labore, nam adipisci voluptate blanditiis obcaecati aliquid harum a? Fugit debitis accusantium eveniet! Est dolorum cum perferendis ratione molestiae mollitia deleniti vero.
+            </p>
+             
+        </article>
+<aside>
+    <ul>
+        <li>
+            <p>
+                <strong>Published on:</strong>
+            </p>
+            <p>
+                May 12th 2023
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>In the category:</strong>
+            </p>
+            <p>
+                Games and Console
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Written by:</strong>
+            </p>
+            <p>
+               Panda po
+            </p>
+        </li>
+    </ul>
+</aside>
+<footer>
+    <p>@Copywrite 2023 Fog Wall</p>
+</footer>
+       
+    </div>
+    
+</body>
+</html>
